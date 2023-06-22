@@ -3,7 +3,6 @@ import { PrismaService } from '../prisma/prisma/prisma.service';
 import { InitTransactionDto, InputExecuteTransactionDto } from './order.dto';
 import { OrderStatus, OrderType } from '.prisma/client';
 import { ClientKafka } from '@nestjs/microservices';
-import { reportUnhandledError } from 'rxjs/internal/util/reportUnhandledError';
 
 @Injectable()
 export class OrdersService {
